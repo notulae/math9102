@@ -1,0 +1,35 @@
+# Student environment for MATH9102 Fundamentals of Data Analysis.
+#
+# Install from this directory with:   pip install -e .
+#
+# The editable install matters: it leaves the math9102 package where it is, so
+# it can find the data/ folder beside it. requirements.txt beside this file
+# pins the exact versions the material was built and tested against.
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "math9102"
+version = "0.1.0"
+description = "MATH9102 Fundamentals of Data Analysis - student materials"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "statsmodels>=0.14",
+    "pingouin>=0.5.4",
+    "scikit-learn>=1.4",
+    "factor_analyzer>=0.5",
+    "pyreadstat>=1.2",
+    "openpyxl>=3.1",
+    "jupyterlab>=4.0",
+    "ipykernel>=6.29",
+]
+
+[tool.setuptools]
+packages = ["math9102"]
