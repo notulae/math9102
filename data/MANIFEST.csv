@@ -1,0 +1,19 @@
+dataset,rows,cols,source_path,source_md5,reader,note
+survey,439,134,2/data + code/survey.dat,ed6e0bd03f060b77d235c46aa4669fea,rtable,"Pallant wellbeing survey, 439x134. Identical copies also in weeks 3, 4, 5, 8."
+sleep,271,55,8/data + code/sleep.sav,72681117d9046648c168b428763e6fe4,spss,"Pallant sleep study, 271x55. NB '5/data + code/sleep.rdata' has the same content but is write.table text misnamed as .rdata - load() fails on it."
+youthcohort,13201,27,5/data + code/youthcohort.sav,768ed6996d6b926587641dda4f788dbb,spss,"UK Youth Cohort Study (Connolly), 13201x27. The .dat export lowercases gradIT/satIT and drops value labels."
+regression,4059,15,8/data + code/Regression.sav,559614ed934638f0a2b2b4c4a012e2f8,spss,"Goldstein et al. exam results, 4059x15 in 65 schools. CLUSTERED - see docs/DECISIONS.md ADR-007."
+raq,2571,23,10/data + code/raq.dat,9d6a46185251a8da2fd737f3622abc1e,tsv,"Field R-anxiety questionnaire, 2571x23 Likert items."
+bullying,819,11,4/data + code/bullying.dat,03e78211cb62a8890ccad7e42a39bfea,rtable,"Bullying survey, 819x11."
+experim,30,18,2/data + code/experim.dat,9c511faf65d1e63296252290c6427e30,rtable,"Experimental study, 30x18."
+experim_clean,300,18,6 - Focus on CA - Practical demo/data +  code/experim_clean.dat,9756d1da847980a8707b8b2bc29c58d6,rtable,"Expanded experim used in the week 6 CA demo, 300x18."
+wine,178,14,10/data + code/wine.csv,7506763ea9302c766155b006de9cc47b,csv,"UCI wine, 178x14."
+bdi,20,4,4/data + code/Field-BDI-Non-parametric.csv,a164b0da118006dcc86832668f0d5c25,csv,"Field BDI drink study, 20x4. Designed to be non-normal."
+websatisfaction,73,31,CA/WebSatisfaction.csv,b3bf4eefd936e48b1a041ff60866fc40,csv,"Web design survey used by CA Phase 2 Task 4, 73x31."
+facebook_narcissism,776,4,2/data + code/FacebookNarcissism.dat,6116e3519506bad137b5c6289ff38b8f,tsv,"Used for week 2 plotting, 776x4."
+festival,810,5,2/data + code/Festival-UrbanRural.dat,dca713a6040b8e7b8e62caf6a4ebc7f7,tsv,"Download festival hygiene, 810x5. Day 2/3 missingness is genuine attrition."
+festival_no_outlier,810,5,2/data + code/Festival-UrbanRural-NoOutlier.dat,de60825899d81b24df6a5702adabb07f,tsv,Festival data with the day-1 outlier corrected; used to show outlier impact.
+romcom,40,3,2/data + code/RomCom.dat,53b09af72746ca1ba374d5075e8fcbf6,tsv,"Film interest by gender, 40x3. Tab-separated with unquoted strings containing spaces and an apostrophe, so whitespace splitting fails."
+romcom_urbanrural,40,3,2/data + code/RomCom-UrbanRural.dat,3f3a5c1f2366ffc71299303be8389ebb,tsv,As romcom but with location instead of gender.
+salaries,397,6,data/raw/salaries.csv,4a05cd7045e5d137b2e31b4df4599ceb,csv,"US academic salaries 2008-09, 397x6 (carData::Salaries, Fox & Weisberg). Vendored from Rdatasets (vincentarelbundock/Rdatasets, csv/carData/Salaries.csv) on 2026-08-16; carData is GPL-2/GPL-3. Not in the legacy corpus - the week 1 lecture loaded it from the R package."
+msleep,83,11,data/raw/msleep.csv,9c6a11a3097d98fa5c909e59b360f196,csv,"Mammal sleep times, 83x11 (ggplot2::msleep, after Savage & West 2007). Vendored from Rdatasets (csv/ggplot2/msleep.csv) on 2026-08-16; ggplot2 is MIT. Not in the legacy corpus - the week 1 lab loaded it from the R package. Retains its genuine missingness: vore, conservation, sleep_rem, sleep_cycle and brainwt are all incomplete."

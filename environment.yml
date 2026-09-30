@@ -1,0 +1,37 @@
+# One-command environment for MATH9102. From this directory:
+#
+#     conda env create -f environment.yml
+#     conda activate math9102
+#
+# Uses conda-forge only. Install Miniforge, not Anaconda:
+# https://conda-forge.org/download/
+#
+# `nodefaults` matters: if you already have Anaconda or Miniconda, your own
+# .condarc probably lists Anaconda's `defaults` channel, and conda would
+# otherwise still reach for it. This file makes sure every package comes from
+# conda-forge, which is BSD-licensed and free for any organisation.
+
+name: math9102
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.12
+  - numpy>=1.26
+  - pandas>=2.2
+  - scipy>=1.11
+  - matplotlib-base>=3.8
+  - seaborn>=0.13
+  - statsmodels>=0.14
+  - scikit-learn>=1.4
+  - pyreadstat>=1.2
+  - openpyxl>=3.1
+  - jupyterlab>=4.0
+  - ipykernel>=6.29
+  - pip
+  - pip:
+      - pingouin>=0.5.4
+      - factor_analyzer>=0.5
+      - .
